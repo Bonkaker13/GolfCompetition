@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
 }
-.results-container>h1 {
+.results-container > h1 {
   font-size: 20px;
   color: rgb(8, 8, 8);
   text-align: center;
@@ -19,7 +19,7 @@
 
 .results-grid {
   display: grid;
-  grid-template-columns: 160px repeat(8, 55px) 60px 85px 85px;
+  grid-template-columns: 170px repeat(8, 55px) 60px 85px 85px;
   gap: 3px;
   padding: 3px;
   border-radius: 5px;
@@ -85,7 +85,7 @@ button:hover {
   gap: 5px;
   padding: 5px;
   border-radius: 5px;
-  left:-500px; 
+  left: -500px;
 }
 .odds-grid > div {
   background: white;
@@ -100,7 +100,7 @@ button:hover {
   .results-grid {
     gap: 3px;
     font-size: 10px;
-    grid-template-columns: 100px repeat(8, 30px) 40px 55px 55px;
+    grid-template-columns: 110px repeat(8, 30px) 40px 55px 55px;
   }
 
   button {
@@ -114,9 +114,9 @@ button:hover {
 }
 @media (max-width: 600px) {
   .results-grid {
-    font-size: 10px;
-    gap: 2px;
-    grid-template-columns: 90px repeat(8, 20px) 30px 30px 30px;
+    font-size: 8px;
+    gap: 1px;
+    grid-template-columns: 120px repeat(8, 20px) 30px 30px 30px;
   }
 
   button {
