@@ -1,0 +1,15 @@
+.grid-container {
+  display: flex;
+  align-items: start;
+  width: 80%;
+  height: 100%;
+}
+
+li:first-of-type {
+  margin-top: 10px;
+}
+li {
+  margin-left: 2vw;
+  list-style-type: circle;
+  font-size: clamp(0.75rem, 2vw, 1.3rem);
+}

@@ -1,0 +1,130 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper {
+  background: none;
+  width: 80%;
+  height: 590px;
+  border: 2px solid white;
+  border-radius: 15px;
+  margin-top: 5px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgba(197, 190, 190, 0.3);
+  border-radius: 15px;
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  margin-top: 10px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  object-fit: fill;
+  margin-top: 1rem;
+}
+.swiper-slide {
+  flex-direction: column;
+}
+.user-name {
+  width: 90%;
+  height: 20%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid rgb(254, 253, 253);
+  border-radius: 5px;
+  background-color: rgba(224, 224, 217, 0.5);
+  color: rgb(86, 82, 82);
+  position: relative;
+}
+.message-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+.message-button:hover {
+  background-color: #0056b3;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fe0202;
+  font-weight: 800;
+
+  padding-top: 20px;
+}
+.slider-wrapper {
+  width: 50%;
+  height: 50%;
+  background-color: #061af8;
+}
+
+.swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  background: #f8fbfb;
+  opacity: 1;
+}
+
+blockquote {
+  position: relative;
+  display: inline;
+  font-size: 1.5rem;
+  line-height: 1;
+  width: 75%;
+}
+blockquote br {
+  line-height: 0; /* removes the extra space */
+  content: "";
+}
+blockquote::before,
+blockquote::after {
+  position: absolute;
+  font-size: 4rem;
+  color: aqua;
+  line-height: 1;
+  pointer-events: none;
+}
+
+blockquote::before {
+  content: "\201C";
+  left: -2rem;
+  top: -0.5rem;
+}
+
+blockquote::after {
+  content: "\201D";
+  right: -2rem;
+  bottom: -2rem;
+}
+.quote {
+  font-size: 1.5rem;
+  color: #faf7f6;
+  margin-top: 0.5rem;
+  font-style: italic;
+  padding: 10px;
+}
+.user-name span {
+  color: rgb(250, 38, 5);
+  font-style: italic;
+}
+
+@media (max-width: 450px) {
+  blockquote,
+  .quote {
+    font-size: 1rem;
+  }
+}

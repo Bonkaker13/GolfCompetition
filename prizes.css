@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: url("winner.jpeg") repeat; */
+  width: 100%;
+  height: 100%;
+}
+.prize-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aquamarine; */
+}
+.grid-container {
+  width:90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 160px 60px 200px;
+  grid-template-areas:
+    "main birdie"
+    "main best"
+    "main rules";
+  font-size: 1rem;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main,
+.birdie,
+.best,
+.rules {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+  justify-items: center;
+  padding: 5px;
+  background-color: rgba(6, 241, 249, 0.7);
+}
+.main {
+  grid-area: main;
+}
+.main-title {
+  font-size: 1.2rem;
+  border-radius: 15px;
+  background-color: rgb(212, 210, 201);
+  text-align: center;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.main > ul > li {
+  line-height: 2.5rem;
+  list-style: none;
+}
+.birdie {
+  grid-area: birdie;
+}
+.birdie > ul > li {
+  list-style: none;
+  line-height: 1.5rem;
+}
+.best {
+  grid-area: best;
+}
+.best > ul > li {
+  list-style: none;
+  line-height: 1.5rem;
+}
+.rules {
+  grid-area: rules;
+  background-color: cadetblue;
+}
+
+.rules > ul > li {
+  list-style: none;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.prize-no {
+  display: inline-block;
+  width: 150px; /* adds consistent space */
+}
+.main-comp {
+  background-color: aliceblue !important;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 15px;
+  width: 70%;
+
+}
+@media (max-width: 900px) {
+
+}
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 295px;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "main"
+      "birdie"
+      "best"
+      "rules";
+  }
+
+  .main > ul > li {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .birdie > ul > li {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .best > ul > li {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .rules > ul > li {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+}
