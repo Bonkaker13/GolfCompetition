@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>oddsGrid</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="results.css" />
-    <!-- <link rel="stylesheet" href="odds.css" /> -->
+    <link rel="stylesheet" href="odds.css" />
   </head>
   <body>
     <nav>
@@ -46,21 +45,13 @@
         <a href="rules.html">Rules</a>
         <a href="players.html">Players</a>
         <a href="prizes.html">Prizes</a>
-        <a class="selected" href="results.html">Results</a>
-        <a href="odds.html">Odds</a>
+        <a href="results.html">Results</a>
+        <a class="selected" href="odds.html">Odds</a>
       </div>
     </nav>
-    <div class="results-container">
-      <h1>Results</h1>
-      <div class="controls">
-        <button id="sortBirdies">Sort by Birdies</button>
-        <button id="sortBest6">Sort by Best 6</button>
-      </div>
-      <div id="resultsGrid" class="results-grid"></div>
-      <!-- <div class="odds-grid" id="oddsGrid">odds grid</div> -->
-
+    <div class="odds-container">
+      <div class="odds-grid" id="oddsGrid">odds grid</div>
     </div>
-    <script type="module" src="results.js"></script>
-    <!-- <script src="results.js"></script> -->
+    <script type="module" src="odds.js"></script>
   </body>
 </html>

@@ -11,5 +11,5 @@ li:first-of-type {
 li {
   margin-left: 2vw;
   list-style-type: circle;
-  font-size: clamp(0.75rem, 2vw, 1.3rem);
+  font-size: clamp(0.75rem, 2vw, 1.1rem);
 }
