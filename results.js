@@ -224,7 +224,7 @@
 //     winningodds: "37 / 1",
 //   },
 // ];
-import players from './playerlist.js';
+import players from "./playerlist.js";
 
 // Store original order
 const originalOrder = [...players];
@@ -238,13 +238,48 @@ function cell(text, className = "") {
 }
 
 // Calculate totals + best 6
+// function calculateStats(player) {
+//   const total = player.scores.reduce((a, b) => a + b, 0);
+//   const avg = (total / player.scores.length).toFixed(1);
+//   const totbirdies = player.birdies.reduce((a, b) => a + b, 0);
+//   const best6 = [...player.scores].sort((a, b) => b - a).slice(0, 6);
+//   const totalBest6 = best6.reduce((a, b) => a + b, 0);
+//   const avgBest6 = (totalBest6 / 6).toFixed(1);
+//   return { total, avg, totalBest6, avgBest6, best6, totbirdies };
+// }
+
+// Calculate totals + best 6
 function calculateStats(player) {
-  const total = player.scores.reduce((a, b) => a + b, 0);
-  const avg = (total / player.scores.length).toFixed(1);
+  // Filters out zero scores
+  const validScores = player.scores.filter((score) => score > 0);
+  // If no valid scores, return zeros
+  if (validScores.length === 0) {
+    return {
+      total: 0,
+      avg: 0,
+      totalBest6: 0,
+      avgBest6: "0.0",
+      best6: [],
+      totbirdies: 0,
+    };
+  }
+  const scores = player.scores;
+  const total = validScores.reduce((a, b) => a + b, 0);
+  const avg = (total / validScores.length).toFixed(1);
   const totbirdies = player.birdies.reduce((a, b) => a + b, 0);
-  const best6 = [...player.scores].sort((a, b) => b - a).slice(0, 6);
-  const totalBest6 = best6.reduce((a, b) => a + b, 0);
-  const avgBest6 = (totalBest6 / 6).toFixed(1);
+  let totalBest6, avgBest6, best6;
+
+  if (validScores.length <= 6) {
+    // If 6 or fewer valid scores, use all
+    best6 = [...validScores];
+    totalBest6 = total;
+    avgBest6 = avg;
+  } else {
+    // More than 6 valid scores, pick best 6
+    best6 = [...validScores].sort((a, b) => b - a).slice(0, 6);
+    totalBest6 = best6.reduce((a, b) => a + b, 0);
+    avgBest6 = (totalBest6 / 6).toFixed(1);
+  }
   return { total, avg, totalBest6, avgBest6, best6, totbirdies };
 }
 
@@ -293,7 +328,6 @@ function renderGrid(playerList) {
   });
 }
 
-
 function renderGrid1(playerList) {
   const grid = document.getElementById("resultsGrid");
   grid.classList.add("hide-totals");
@@ -331,7 +365,6 @@ function renderGrid1(playerList) {
     grid.appendChild(cell(totbirdies));
     // grid.appendChild(cell(avgBest6, "best6"));
     // grid.appendChild(cell(totalBest6, "best6"));
-
   });
 }
 
