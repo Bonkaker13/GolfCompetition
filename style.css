@@ -136,7 +136,7 @@ nav svg {
 .winterChallenge {
   text-align: center;
 }
-.saveTheDate {
+/* .saveTheDate {
   position: absolute;
   left: 70%;
   top: 60%;
@@ -150,7 +150,7 @@ nav svg {
   background-color: orange;
   font-size: clamp(1rem, 1vw, 1.25rem);
   color: rgb(7, 7, 7);
-}
+} */
 
 .warning {
   color: red;

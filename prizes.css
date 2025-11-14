@@ -15,7 +15,7 @@ body {
   /* background-color: aquamarine; */
 }
 .grid-container {
-  width:90%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 160px 60px 200px;
@@ -97,10 +97,8 @@ body {
   text-align: center;
   border-radius: 15px;
   width: 70%;
-
 }
 @media (max-width: 900px) {
-
 }
 @media (max-width: 600px) {
   .grid-container {

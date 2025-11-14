@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 
   // Close popup when button clicked
   closeBtn.addEventListener("click", () => {
-    console.log ("Close button clicked");
+    console.log("Close button clicked");
     popup.classList.add("hidden");
   });
 
@@ -19,12 +19,12 @@ window.addEventListener("load", () => {
   });
 });
 
-const navLinks = document.querySelectorAll('nav a');
-const current = window.location.pathname.split('/').pop();
+const navLinks = document.querySelectorAll("nav a");
+const current = window.location.pathname.split("/").pop();
 console.log("Current page:", current);
 
-navLinks.forEach(link => {
-  if (link.getAttribute('href') === current) {
-    link.classList.add('active');
+navLinks.forEach((link) => {
+  if (link.getAttribute("href") === current) {
+    link.classList.add("active");
   }
 });

@@ -52,15 +52,17 @@
     </nav>
     <div class="results-container">
       <h1>Results</h1>
-      <div class="controls">
-        <button id="sortBirdies">Sort by Birdies</button>
-        <button id="sortBest6">Sort by Best 6</button>
+      <div class="select-wrapper">
+        <div class="sortBy">Sort By</div>
+        <select class="custom-select" id="sortSelect">
+          <option value="averagebest6">Best 6 Average</option>
+          <option value="score">Total Score</option>
+          <option value="birdies">Total Birdies</option>
+          <option value="bestScore">Highest Score</option>
+        </select>
       </div>
       <div id="resultsGrid" class="results-grid"></div>
-      <!-- <div class="odds-grid" id="oddsGrid">odds grid</div> -->
-
     </div>
     <script type="module" src="results.js"></script>
-    <!-- <script src="results.js"></script> -->
   </body>
 </html>
