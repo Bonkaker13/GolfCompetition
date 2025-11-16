@@ -52,7 +52,8 @@
   grid-template-columns: repeat(2, 1fr);
 }
 .header {
-  color: rgb(48, 3, 248);
+  background-color: rgb(46, 101, 239) !important;
+  color: rgb(253, 253, 254);
   font-weight: bold;
 }
 
@@ -92,10 +93,14 @@ button:hover {
 }
 .sortBy {
   background-color: rgb(255, 254, 252);
-  width: 120px;
+  color: #0303fefa;
+  font: bold;
+  width: 125px;
   font-size: 1rem;
   text-align: center;
   margin-right: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
 }
 .custom-select {
   width: 100%;
@@ -108,31 +113,28 @@ button:hover {
   -webkit-appearance: none;
   -moz-appearance: none;
   cursor: pointer;
+  outline: none;
   transition: background 0.2s ease;
+  margin-top: 5px;
 }
 
 /* Add custom dropdown arrow */
 .select-wrapper::after {
   content: "▼";
   font-size: 1.2rem;
-  color: #fe0526;
+  color: #0808fe;
   position: absolute;
   right: 12px;
   top: 50%;
-  padding-bottom: 5px;
   transform: translateY(-50%);
   pointer-events: none;
 }
 
 /* Hover & Focus effects */
 .custom-select:hover {
-  background: #afe8e5;
+    background-color: rgb(127, 205, 238);
 }
 
-.custom-select:focus {
-  outline: none;
-  background: #f4f9f9;
-}
 
 /* For smaller screens (e.g. phones) */
 @media (max-width: 900px) {
@@ -148,9 +150,9 @@ button:hover {
     grid-template-columns: 110px repeat(8, 40px) 70px 75px !important;
   }
 
-  button {
+  /* button {
     font-size: 12px;
-  }
+  } */
 
   h1 {
     font-size: 20px;

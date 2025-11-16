@@ -58,20 +58,7 @@ function renderScoresGrid(playerList) {
   grid.classList.add("hide-birdies");
   grid.classList.remove("hide-highscore");
   grid.innerHTML = ""; // clear grid
-  const headers = [
-    "Player",
-    "R1",
-    "R2",
-    "R3",
-    "R4",
-    "R5",
-    "R6",
-    "R7",
-    "R8",
-    // "Birdies",
-    "Avg",
-    "Total",
-  ];
+  const headers = ["Player", "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "Avg", "Total"];
   headers.forEach((h) => grid.appendChild(cell(h, "header")));
 
   playerList.forEach((player) => {
@@ -102,18 +89,7 @@ function renderBirdieGrid(playerList) {
   grid.classList.remove("hide-highscore");
   grid.innerHTML = ""; // clear grid
 
-  const headers1 = [
-    "Player",
-    "R1",
-    "R2",
-    "R3",
-    "R4",
-    "R5",
-    "R6",
-    "R7",
-    "R8",
-    "Birdies",
-  ];
+  const headers1 = ["Player", "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "Birdies"];
   headers1.forEach((h) => grid.appendChild(cell(h, "header")));
 
   playerList.forEach((player) => {
