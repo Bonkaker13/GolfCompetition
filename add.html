@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>oddsGrid</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="results.css" />
-    <!-- <link rel="stylesheet" href="odds.css" /> -->
+    <link rel="stylesheet" href="add.css" />
   </head>
   <body>
     <nav>
@@ -32,25 +31,34 @@
         <a href="rules.html">Rules</a>
         <a href="players.html">Players</a>
         <a href="prizes.html">Prizes</a>
-        <a class="selected" href="results.html">Results</a>
+        <a href="results.html">Results</a>
         <a href="odds.html">Odds</a>
-                <a href="add.html">+</a>
-
+        <a class="selected" href="add.html">+</a>
       </div>
     </nav>
-    <div class="results-container">
-      <!-- <h1>Results</h1> -->
-      <div class="select-wrapper">
-        <div class="sortBy">Sorted By</div>
-        <select class="custom-select" id="sortSelect">
-          <option value="averagebest6">Best 6 Average</option>
-          <option value="score">Total Score</option>
-          <option value="birdies">Total Birdies</option>
-          <option value="bestScore">Highest Score</option>
-        </select>
-      </div>
-      <div id="resultsGrid" class="results-grid"></div>
+    <div class="add-container">
+      <form id="scoreForm" class="form-grid">
+        <label for="playerSelect">Player</label>
+        <select id="playerSelect" name="player_id"></select>
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" />
+
+        <label for="round">Round Number</label>
+        <input type="number" id="round" name="round_number" min="1" max="8" />
+
+        <label for="score">Score</label>
+        <input type="number" id="score" name="score" />
+
+        <label for="birdies">Birdies</label>
+        <input type="number" id="birdies" name="birdies" />
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+
+      <!-- <div id="result"></div> -->
+      <!-- <div class="odds-grid" id="oddsGrid">odds grid</div> -->
     </div>
-    <script type="module" src="results.js"></script>
+    <script type="module" src="add.js"></script>
   </body>
 </html>

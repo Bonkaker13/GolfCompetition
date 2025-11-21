@@ -24,14 +24,14 @@ function calculateStats(player) {
       total: 0,
       avg: 0,
       totalBest6: 0,
-      avgBest6: "0.0",
+      avgBest6: "0.00",
       best6: [],
       totbirdies: 0,
     };
   }
   const scores = player.scores;
   const total = validScores.reduce((a, b) => a + b, 0);
-  const avg = (total / validScores.length).toFixed(1);
+  const avg = (total / validScores.length).toFixed(2);
   const totbirdies = player.birdies.reduce((a, b) => a + b, 0);
   let totalBest6, avgBest6, best6, highScore;
 
