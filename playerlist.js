@@ -1,21 +1,21 @@
 const players = [
   {
     name: "Aaaron Couling",
-    scores: [0, 0, 0, 0, 0, 0, 0, 0],
+    scores: [29, 0, 0, 0, 0, 0, 0, 0],
     birdies: [0, 0, 0, 0, 0, 0, 0, 0],
-    winningodds: "33 / 1",
+    winningodds: "20 / 1",
   },
   {
     name: "Andrew Hasted",
     scores: [32, 33, 36, 32, 0, 0, 0, 0],
     birdies: [0, 0, 1, 0, 0, 0, 0, 0],
-    winningodds: "20 / 1",
+    winningodds: "16 / 1",
   },
   {
     name: "Andy Keel",
     scores: [35, 0, 0, 0, 0, 0, 0, 0],
     birdies: [0, 0, 0, 0, 0, 0, 0, 0],
-    winningodds: "25 / 1",
+    winningodds: "20 / 1",
   },
   {
     name: "Andy Sexton",
@@ -31,14 +31,14 @@ const players = [
   },
   {
     name: "Bruce Markham",
-    scores: [25, 18, 0, 0, 0, 0, 0, 0],
+    scores: [25, 18, 24, 0, 0, 0, 0, 0],
     birdies: [0, 0, 0, 0, 0, 0, 0, 0],
     winningodds: "1000 / 1",
   },
   {
     name: "Dan Irish",
-    scores: [34, 35, 37, 0, 0, 0, 0, 0],
-    birdies: [1, 3, 2, 0, 0, 0, 0, 0],
+    scores: [34, 35, 37, 33, 0, 0, 0, 0],
+    birdies: [1, 3, 2, 2, 0, 0, 0, 0],
     winningodds: "6 / 1",
   },
   {
@@ -67,8 +67,8 @@ const players = [
   },
   {
     name: "Dean Bridges",
-    scores: [0, 0, 0, 0, 0, 0, 0, 0],
-    birdies: [0, 0, 0, 0, 0, 0, 0, 0],
+    scores: [33, 0, 0, 0, 0, 0, 0, 0],
+    birdies: [2, 0, 0, 0, 0, 0, 0, 0],
     winningodds: "20 / 1",
   },
   {
@@ -109,9 +109,9 @@ const players = [
   },
   {
     name: "Jane Southcombe",
-    scores: [34, 34, 0, 0, 0, 0, 0, 0],
-    birdies: [2, 2, 0, 0, 0, 0, 0, 0],
-    winningodds: "15 / 1",
+    scores: [34, 34, 35, 0, 0, 0, 0, 0],
+    birdies: [2, 2, 1, 0, 0, 0, 0, 0],
+    winningodds: "10 / 1",
   },
   {
     name: "John Baker",
@@ -139,19 +139,19 @@ const players = [
   },
   {
     name: "John Armour",
-    scores: [36, 33, 35, 0, 0, 0, 0, 0],
+    scores: [36, 33, 35, 20, 30, 0, 0, 0],
     birdies: [3, 0, 0, 0, 0, 0, 0, 0],
     winningodds: "10 / 1",
   },
   {
     name: "Lawson Allen",
-    scores: [35, 0, 0, 0, 0, 0, 0, 0],
+    scores: [35, 16, 0, 0, 0, 0, 0, 0],
     birdies: [0, 0, 0, 0, 0, 0, 0, 0],
     winningodds: "16 / 1",
   },
 
   {
-    name: "Lee Fischer",
+    name: "Nick Dunford",
     scores: [0, 0, 0, 0, 0, 0, 0, 0],
     birdies: [0, 0, 0, 0, 0, 0, 0, 0],
     winningodds: "20 / 1",
@@ -165,9 +165,9 @@ const players = [
 
   {
     name: "Martin Campbell",
-    scores: [35, 38, 30, 0, 0, 0, 0, 0],
-    birdies: [0, 0, 0, 0, 0, 0, 0, 0],
-    winningodds: "8 / 1",
+    scores: [35, 38, 30, 38, 0, 0, 0, 0],
+    birdies: [0, 0, 0, 0, 1, 0, 0, 0],
+    winningodds: "3 / 1",
   },
   {
     name: "Matt Hunt",
@@ -188,15 +188,9 @@ const players = [
     winningodds: "20 / 1",
   },
   {
-    name: "Oli Chappell",
-    scores: [0, 0, 0, 0, 0, 0, 0, 0],
-    birdies: [0, 0, 0, 0, 0, 0, 0, 0],
-    winningodds: "20 / 1",
-  },
-  {
     name: "Pat Michael",
-    scores: [34, 35, 0, 0, 0, 0, 0, 0],
-    birdies: [0, 1, 0, 0, 0, 0, 0, 0],
+    scores: [34, 35, 31, 0, 0, 0, 0, 0],
+    birdies: [0, 1, 1, 0, 0, 0, 0, 0],
     winningodds: "15 / 1",
   },
   {
@@ -214,8 +208,8 @@ const players = [
   },
   {
     name: "Simon Wycherley",
-    scores: [29, 0, 0, 0, 0, 0, 0, 0],
-    birdies: [0, 0, 0, 0, 0, 0, 0, 0],
+    scores: [29,33, 0, 0, 0, 0, 0, 0],
+    birdies: [0, 2, 0, 0, 0, 0, 0, 0],
     winningodds: "20 / 1",
   },
   {
@@ -226,7 +220,7 @@ const players = [
   },
   {
     name: "Wes Hacker",
-    scores: [38, 31, 0, 0, 0, 0, 0, 0],
+    scores: [38, 31, 31, 0, 0, 0, 0, 0],
     birdies: [3, 0, 0, 0, 0, 0, 0, 0],
     winningodds: "16 / 1",
   },
